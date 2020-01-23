@@ -393,7 +393,7 @@ class MaterialModelHandler
             material.defaultEmissiveFactor());
         values.put("emissiveFactor", emissiveFactor);
 
-        float lightPosition[] = {100f,100f,1001f }; //TODO lightPosition
+        float lightPosition[] = {-10f,1f,50f}; //TODO lightPosition
         values.put("lightPosition", lightPosition);
 
         materialModel.setValues(values);
