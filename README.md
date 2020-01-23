@@ -24,6 +24,7 @@ This Android port of jglTF library supports most of the features provided in ori
 - Almost full glTF 2.0 version specification support (animation, morphing, textures, etc ...)
 - Custom vertex and fragment shaders (GLSL) with physically based rendering (PBR) support
 - The viewer utilizes GLSurfaceView.Renderer class for easy application integration including threading
+- Small codebase footprint, no external dependency, created APK is only 2.3MB large
 
 # TODO
 - Fix texture Alpha Blending (PixelDatas)
