@@ -75,12 +75,14 @@ public final class AnimationRunner
         {
             return;
         }
+
+        //TODO FIX multiple created instance of "animationThread"!
         animationThread = new Thread(this::runAnimations, "animationThread");
         animationThread.setDaemon(true);
         animationThread.start();
         running = true;
     }
-    
+
     /**
      * Stop this runner. If the runner is not {@link #isRunning()},
      * then this has no effect.

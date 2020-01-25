@@ -80,6 +80,7 @@ class MyRenderer implements GLSurfaceView.Renderer {
         } else {
             //zoom out
             zoom -= (width/2f - x)/1150;
+            if (zoom <= 0) {zoom = 0.005f;}
             ((MyExtCamera) extCam).setLoc(15, 1/zoom);
         }
 
